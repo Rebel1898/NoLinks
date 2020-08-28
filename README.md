@@ -1,8 +1,6 @@
 # ![No Links icon](https://raw.githubusercontent.com/Rebel1898/NoLinks/master/icons/readerModeGrayWhite-32%20-%20copia.png) NoLinks!
 
-> This add-on adds a button to the toolbar. Clicking on it activates the Reader View even if the icon in the address bar is not present.
-
-
+> This add-on adds a button to the toolbar. Clicking on it removes any kind of web interaction elements, specially disabling links behaviour and appearence; facilitating a cleaner and more focus read of a website. It may be optionally bind to Firefox reader view to enhance readability even more.
 
 ## Description
 
