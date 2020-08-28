@@ -1,0 +1,47 @@
+{
+
+  "description": "This extension disables links and facilitates a link-free and clean read of a website",
+  "manifest_version": 2,
+  "name": "NoLinks",
+  "short_name": "NoLinks",
+  "version": "1",
+  "developer": {
+    "name": "Sergio LL."
+  },
+  "default_locale": "en",
+  
+  
+  
+  "icons": {
+    "32": "icons/readerModeGrayWhite-32 - copia.png",
+    "96": "icons/readerModeGrayWhite-96 - copia.png"
+  },
+  
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  
+  "background": {
+    "scripts": ["browserAction.js"]
+  },
+
+
+  "browser_action": {
+    "default_icon": "icons/readerModeGrayWhite-32 - copia.png",
+    "default_title": "__MSG_browserActionTitle__"
+  
+    
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "nolinks@example.com"
+    }
+  },
+  "options_ui": {
+    "page": "popup.html",
+    "browser_style": true
+  }
+}

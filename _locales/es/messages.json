@@ -1,0 +1,21 @@
+{
+  "extensionName": {
+    "message": "NoLinks",
+    "description": "Nombre completo de la extensión"
+  },
+  
+  "extensionShortName": {
+    "message": "NoLinks",
+    "description": "Abreviatura de la extensión."
+  },
+
+  "extensionDescription": {
+    "message": "Esta extensión añade un botón a la barra de herramientas. Al clicarlo, se eliminan los links de la web de la pestaña actual para incrementar su legibilidad.",
+    "description": "Descripción de la extensión."
+  },
+
+  "browserActionTitle": {
+    "message": "Destroy Links",
+    "description": "Mensaje mostrado al posicionar el raton sobre el botón"
+  }
+}

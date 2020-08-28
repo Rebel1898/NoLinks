@@ -1,0 +1,21 @@
+{
+  "extensionName": {
+    "message": "NoLinks",
+    "description": "Name of the extension."
+  },
+  
+  "extensionShortName": {
+    "message": "NoLinks",
+    "description": "Short name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "This add-on adds a button to the toolbar. Clicking on it eliminates links in current tab, increasing its readability. ",
+    "description": "Description of the extension."
+  },
+
+  "browserActionTitle": {
+    "message": "Destroy Links",
+    "description": "The title being shown when hovering over the extension's button."
+  }
+}
