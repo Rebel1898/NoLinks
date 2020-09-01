@@ -23,19 +23,19 @@ function changeenlaces(x) {
     var count = enlaces.length - 1;
     if (count > -1) {
         for (i = count; i > -1; i--) {
-            var texto = enlaces[i].innerText;
+            var texto = enlaces[i].innerText;           
             var kinder = enlaces[i].children;
             var control = false;
             var parentElement = enlaces[i].parentElement;
             var parentCSS = window.getComputedStyle(parentElement, null);
             enlaces[i].style = parentCSS;
             for (j = 0; j < kinder.length; j++) {
-                if (kinder[j].tagName == "H1" || kinder[j].tagName == "H2" || kinder[j].tagName == "H3" || kinder[j].tagName == "H4") {
+                if (kinder[j].tagName == "H1" || kinder[j].tagName == "H2" || kinder[j].tagName == "H3" || kinder[j].tagName == "H4"|| kinder[j].tagName == "I") {
                     childrenCSS = window.getComputedStyle(kinder[j])
                     enlaces[i].style = childrenCSS;
                     control = true;
                     break;
-                }
+                 }
                 else { }
             }
             var theCSSprop = window.getComputedStyle(enlaces[i], null).getPropertyValue("background-image");
@@ -52,9 +52,7 @@ function changeenlaces(x) {
             if (control == false) { 
                 // enlaces[i].outerHTML = texto;
                 var nodotexto = document.createTextNode(texto);
-                enlaces[i].parentElement.appendChild(nodotexto);
-                enlaces[i].remove();
-
+                enlaces[i].parentNode.replaceChild(nodotexto, enlaces[i]);
             }
             else { enlaces[i].style = "pointer-events:none;" }
 
