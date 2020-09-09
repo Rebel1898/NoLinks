@@ -3,21 +3,17 @@ for (k = 0; k < boton.length; k++) {
     boton[k].disabled = true;
     boton[k].style = "pointer-events: none;";
 }
-
 var input = document.getElementsByTagName("input");
 for (k = 0; k < input.length; k++) {
     input[k].disabled = true;
     input[k].style = "pointer-events: none;";
 }
-
 var dival = document.getElementsByTagName("div")
 for (k = 0; k < dival.length; k++) {
     dival[k].style = "pointer-events: none;";
 }
-
 document.getElementsByTagName("html")[0].style = "pointer-events:none";
 document.getElementsByTagName("html")[0].style = "overflow:visible";
-
 function changeenlaces(x) {
     var enlaces = x.getElementsByTagName("a");
     var count = enlaces.length - 1;
@@ -62,20 +58,23 @@ function changeenlaces(x) {
 }
 changeenlaces(document);
 
-frameList = window.frames; 
-for (var i = 0; i < frames.length; i++) {
+
+var frameList = window.frames; 
+for (var i = 0; i < frameList.length; i++) {
+    try{
     frameList[i].document.body.style += "pointer-events:none";
     frameList[i].document.getElementsByTagName("html")[0].style = "overflow:visible";
-    changeenlaces(frames[i].document)
+    changeenlaces(window.frames[i].document)
+}
+catch{}
 }
 
 var imarcos = document.getElementsByTagName("iframe")
 for (k = 0; k < imarcos.length; k++) {
-    if (iframe.src)
+    if (imarcos[k].src)
         try {
-            if (iframe.contentWindow.document.getElementsByTagName("video") > 0) {
+            if (imarcos[k].contentWindow.document.getElementsByTagName("video") > 0) {
                 imarcos[k].style = "pointer-events: none;";
-                frameList[i].document.getElementsByTagName("html")[0].style = "overflow:visible";
             }
         }
         catch{
